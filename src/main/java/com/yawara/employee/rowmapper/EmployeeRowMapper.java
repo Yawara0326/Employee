@@ -12,9 +12,9 @@ public class EmployeeRowMapper implements RowMapper<Employee> {
         Employee employee = new Employee();
         employee.setId(rs.getInt("id"));
         employee.setName(rs.getString("name"));
-        employee.setId_number(rs.getString("id_number"));
+        employee.setIdNumber(rs.getString("id_number"));
         employee.setEmail(rs.getString("email"));
-        employee.setImage_url(rs.getString("image_url"));
+        employee.serImageUrl(rs.getString("image_url"));
         return employee;
     }
 }

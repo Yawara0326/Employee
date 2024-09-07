@@ -1,19 +1,21 @@
-package com.yawara.employee.model;
+package com.yawara.employee.dto;
 
-public class Employee {
-    private Integer id;
+import jakarta.validation.constraints.Email;
+import org.springframework.lang.NonNull;
+
+public class EmployeeRequest {
+
+    @NonNull
     private String name;
+
+    @NonNull
     private String idNumber;
+
+    @NonNull
+    @Email
     private String email;
+
     private String imageUrl;
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
@@ -43,7 +45,7 @@ public class Employee {
         return imageUrl;
     }
 
-    public void serImageUrl(String imageUrl) {
+    public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
     }
 }
