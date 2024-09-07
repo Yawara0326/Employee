@@ -1,7 +1,6 @@
 package com.yawara.employee.service;
 
 import com.yawara.employee.dao.EmployeeDao;
-import com.yawara.employee.dao.EmployeeDaoImpl;
 import com.yawara.employee.dto.EmployeeRequest;
 import com.yawara.employee.model.Employee;
 import org.springframework.beans.factory.annotation.Autowired;

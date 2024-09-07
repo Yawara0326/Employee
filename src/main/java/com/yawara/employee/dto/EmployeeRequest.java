@@ -1,17 +1,18 @@
 package com.yawara.employee.dto;
 
 import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotNull;
 import org.springframework.lang.NonNull;
 
 public class EmployeeRequest {
 
-    @NonNull
+    @NotNull
     private String name;
 
-    @NonNull
+    @NotNull
     private String idNumber;
 
-    @NonNull
+    @NotNull
     @Email
     private String email;
 
